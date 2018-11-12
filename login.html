@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/base.css" id="base">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="./js/jQuery3.2.1.js"></script>
+    <script src="./js/login.js"></script>
+</head>
+<body>
+    <div class="big_logobox">
+        <div class="h_logo">
+            <a href="javascript:;">小米网</a>
+        </div>
+    </div>
+    <div class="big_banner">
+        <a href="javascript:;">小米网</a>
+    </div>
+    <div class="wrap">
+        <div class="denglu_box clearfix">
+            <div class="denglu">
+                <div class="biaodan">
+                    <div class="tab">
+                        <div class="nav_tabs">
+                            <a class="navtab-link now" href="javascript:;" data-tab="zh">帐号登录</a>
+                            <!--<span class="line"></span>-->
+                            <!--<a class="navtab-link" href="javascript:;" data-tab="sm">扫码登录</a>-->
+                        </div>
+                    </div>
+                    <div class="biao">
+                        <!--用户名登录-->
+                        <div class="login_xin_uname">
+                            <!--表单这块要写后台了-->
+                            <form >
+                                <!--input-->
+                                <div class="login_box">
+                                        <div class="input">
+                                            <label for="phone">
+                                                <input type="text" name="phone" autocomplete="off" id="phone" placeholder="邮箱/手机号码/小米ID">
+                                            </label>
+                                            <label for="upwd" class="">
+                                                <input type="password" autocomplete="off" name="upwd" id="upwd" placeholder="密码">
+                                            </label>
+                                            <div class="warning">
+                                                <span><i></i>用户名或密码不正确</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!--按钮-->
+                                <div class="btn_bg">
+                                        <input class="btn" id="btn" type="submit" value="登录">
+                                    </div>
+                                <div class="other">
+
+                                    <div class="zhuce">
+                                            <div class="zhuce_box">
+                                                <a href="javascript:;" >立即注册</a>
+                                                <span>|</span>
+                                                <a href="javascript:;">忘记密码？</a>
+                                            </div>
+                                        </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--其他登陆方式-->
+                        <div class="qwbz">
+                                <!--fieldset表单元素分组-->
+                                <fieldset class="oth_type_tit">
+                                    <legend align="center" class="oth_type_txt">其他方式登录</legend>
+                                </fieldset>
+                                <div class="oth_type_list">
+                                    <a href="javascript:;" class="oth_type_item"><i></i></a>
+                                    <a href="javascript:;" class="oth_type_item"><i></i></a>
+                                    <a href="javascript:;" class="oth_type_item"><i></i></a>
+                                    <a href="javascript:;" class="oth_type_item"><i></i></a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="link">
+            <ul class="list">
+                <li><a href="javascript:;">简体</a>|</li>
+                <li><a href="javascript:;">繁体</a>|</li>
+                <li><a href="javascript:;">English</a>|</li>
+                <li><a href="javascript:;">常见问题</a>|</li>
+                <li><a href="javascript:;">隐私政策</a></li>
+            </ul>
+        </div>
+        <p class="beian">
+            小米公司版权所有-京ICP备10046444-
+            <a href="javascript:;">
+                <span><img src="./images/login/ghs.png" alt=""></span>
+                京公网安备11010802020134号
+            </a>
+            -京ICP证110507号
+        </p>
+    </div>
+</body>
+</html>

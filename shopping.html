@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shop</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/base.css" id="base">
+    <link rel="stylesheet" href="./css/shopping.css">
+    <script src="./js/jQuery3.2.1.js"></script>
+    <script src="./js/vue.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/insertBefore.js"></script>
+    <script src="./js/shopping.js"></script>
+</head>
+<body>
+<!--头部-->
+<div>
+    <div id="header"></div>
+</div>
+    <div class="p_header">
+    <div class="p_box">
+        <div class="p_nav">
+            <div class="p_container clearfix">
+                <h2 class="p_title">小米8</h2>
+                <div class="p_son">
+                    <div class="p_left">
+                        <span class="span">|</span>
+                        <a href="javascript:;">小米8 透明探索版</a>
+                        <span class="span">|</span>
+                        <a href="javascript:;">小米8 SE</a>
+                    </div>
+                    <div class="p_right">
+                        <a href="javascript:;" class="cur" >概述</a>
+                        <span class="span">|</span>
+                        <a href="javascript:;">图集</a>
+                        <span class="span">|</span>
+                        <a href="javascript:;">参数</a>
+                        <span class="span">|</span>
+                        <a href="javascript:;">F码通道</a>
+                        <span class="span">|</span>
+                        <a href="javascript:;">用户评价</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="p_header " id="p_fixed">
+    <div class="p_box">
+        <div class="p_nav">
+            <div class="p_container clearfix">
+                <h2 class="p_title">小米8</h2>
+                <div class="p_son">
+                    <div class="p_left">
+                        <span class="span">|</span>
+                        <a href="javascript:;">小米8 透明探索版</a>
+                        <span class="span">|</span>
+                        <a href="javascript:;">小米8 SE</a>
+                    </div>
+                    <div class="p_right">
+                        <a href="javascript:;" class="cur">概述</a>
+                        <span class="span">|</span>
+                        <a href="javascript:;">图集</a>
+                        <span class="span">|</span>
+                        <a href="javascript:;">参数</a>
+                        <span class="span">|</span>
+                        <a href="javascript:;">F码通道</a>
+                        <span class="span">|</span>
+                        <a href="javascript:;">用户评价</a>
+                        <span class="span">|</span>
+                        <a href="javascript:;" class="p_btn_small">立即购买</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="bay_box" id="app">
+        <div class="box clearfix ">
+            <div class="pro_center clearfix warpper">
+                <div class="l_view">
+                   <div class="l_box">
+                       <div class="box_img">
+                           <div class="ui_img">
+                               <div class="ui_slide">
+                                   <img class="" v-for="(value,index) in res.c_img.split(',')" :src="value" alt="">
+                               </div>
+                           </div>
+                           <div class="ui_ctrl">
+                               <div class="page">
+                                   <div class="page_item" v-for="(value,index) in res.c_img.split(',')"><a href="javascript:;" class="" :data-index="index"></a></div>
+                               </div>
+                               <div class="zy">
+                                   <a href="javascript:;" class="prev">prev</a>
+                                   <a href="javascript:;" class="next">next</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="r_view">
+                    <h1 class="pro-title ">
+                        <span class="name">{{res.c_h1}}</span>
+                    </h1>
+                    <p class="desc"><span>{{res.c_orange}}</span>{{res.c_title}}</p>
+                    <div class="price_box">
+                        <span class="price">{{res.c_price}}</span>
+                    </div>
+                    <div class="haochu">
+                        <div class="zp_box">
+                            <ul>
+                                <li>
+                                    <span class="flow_tag">赠品</span>
+                                    <span class="flow_name">赠米粉卡，内含100元话费</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main_box">
+
+                        <div class="bb_box">
+                            <div class="bb_choose" v-if="res.c_banben != ''">
+                                <div class="set_title"> 选择版本  </div>
+                                <ul class="set_list clearfix">
+                                    <li class="btn " v-for="(item,o) in res.c_banben.split(',')">
+                                        <a href="javascript:;">
+                                            <span class="name">{{item.split('|')[0]}} </span>
+                                            <span class="price"> {{item.split('|')[1]}}</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="color_box">
+                            <div class="set_color"> 选择颜色  </div>
+                            <ul class="set_list_color clearfix">
+                                <li class="btn btn_show">
+                                    <a href="javascript:;">
+                                        <img :src="res.c_color.split('|')[1]" alt="">
+                                        {{res.c_color.split('|')[0]}}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bx_box" v-if="res.c_bx">
+                            <div class="bx_title">
+                                选择小米提供的保障服务
+                                <a href="javascript:;">了解保障服务 ></a>
+                            </div>
+                            <ul>
+                                <li v-for="(value,index) in res.c_bxnr.split('?')">
+                                    <i class="iconfont"><em>√</em></i>
+                                    <img src="./images/shopping/pms_1537265392.26335954.jpg" alt="">
+                                    <div>
+                                        <span class="name"> {{value.split('|')[0]}}  </span>
+                                        <p class="desc">{{value.split('|')[1]}}</p>
+                                        <p class="agree">
+                                            <i class="iconfont icon-checkbox J_read"><em>√</em></i>我已阅读
+                                            <a href="javascript:;">服务条款</a>
+                                            <span>|</span>
+                                            <a href="javascript:;">常见问题</a>
+                                            <span class="price">  {{value.split('|')[2]}}  </span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <!--<li class="active_li">-->
+                                    <!--<i class="iconfont"><em>√</em></i>-->
+                                    <!--<img src="./images/shopping/pms_1537265392.26335954.jpg" alt="">-->
+                                    <!--<div>-->
+                                        <!--<span class="name"> 碎屏保障服务  </span>-->
+                                        <!--<p class="desc">手机意外碎屏</p>-->
+                                        <!--<p class="agree">-->
+                                            <!--<i class="iconfont icon-checkbox J_read"><em>√</em></i>-->
+                                            <!--我已阅读-->
+                                            <!--<a href="javascript:;">服务条款</a><span>|</span>-->
+                                            <!--<a href="javascript:;">常见问题</a>-->
+                                        <!--</p>-->
+                                        <!--<span class="price">  59元  </span>-->
+                                    <!--</div>-->
+                                <!--</li>-->
+                            </ul>
+                        </div>
+                        <div class="shop_box">
+                            <ul>
+                                <li>
+                                    {{zj.title1}}
+                                    <span>                 {{zj.price1}} 元</span>
+                                </li>
+                                <li v-if="res.c_bx">{{zj.bxnr}}<span>{{zj.price2}} 元</span> </li>
+                                <li class="totlePrice">   总计   ：{{zj.price3}} 元  </li>
+                            </ul>
+                        </div>
+                        <ul class="btn_buy">
+                            <li><a href="javascript:;" class="gwc" :data-id="res.pid">加入购物车</a></li>
+                            <li><a href="javascript:;" class="lik"><i></i>喜欢 </a></li>
+                        </ul>
+                        <div class="hyr_box">
+                            <a href="javascript:;">
+                                <span class="sport"><i></i><em>7天无理由退货</em></span>
+                                <span class="sport"><i></i><em>15天质量问题换货</em></span>
+                                <span class="sport"><i></i><em>365天保修</em></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--底部-->
+<div>
+    <div id="footer"></div>
+</div>
+</body>
+</html>

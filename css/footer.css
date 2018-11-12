@@ -1,0 +1,215 @@
+/*footer 的底部第一行*/
+footer .footer .container .service {
+    padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+footer .footer .container .service .service-ul li {
+    float: left;
+    width: 19.8%;
+    height: 25px;
+    border-left: 1px solid #e0e0e0;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+footer .footer .container .service .service-ul li a {
+    transition: all .2s linear;
+}
+
+footer .footer .container .service .service-ul li a i {
+    display: inline-block;
+    width: 24px;
+    height: 25px;
+    vertical-align: -6px;
+    margin-right: 2px;
+    transition:all .2s linear;
+}
+
+/*图片都是用背景加载的*/
+
+footer .footer .container .service .service-ul li:first-child a i {
+    background-image: url(./../images/footer/banshou.png);
+}
+footer .footer .container .service .service-ul li:nth-child(2) a i {
+    background-image: url(./../images/footer/7.png);
+    margin-right: 3px;
+}
+footer .footer .container .service .service-ul li:nth-child(3) a i {
+    background-image: url(./../images/footer/15.png);
+}
+footer .footer .container .service .service-ul li:nth-child(4) a i {
+    background-image: url(./../images/footer/liw.png);
+    margin-right: 5px;
+}
+footer .footer .container .service .service-ul li:nth-child(5) a i {
+    background-image: url(./../images/footer/didian.png);
+}
+footer .footer .container .service .service-ul li:nth-child(1){
+    border: none;
+}
+footer .footer .container .service .service-ul li a{
+    color: #616161;
+}
+
+
+/*鼠标移动事件  change_orange*/
+footer .footer .container .service .service-ul li a.change_color {
+    color: #ff6700;
+}
+footer .footer .container .service .service-ul li:first-child a i.change_orange {
+    background-image: url(./../images/footer/banshoucheng.png);
+}
+footer .footer .container .service .service-ul li:nth-child(2) a i.change_orange {
+    background-image: url(./../images/footer/7cheng.png);
+    margin-right: 3px;
+}
+footer .footer .container .service .service-ul li:nth-child(3) a i.change_orange {
+    background-image: url(./../images/footer/15cheng.png);
+}
+footer .footer .container .service .service-ul li:nth-child(4) a i.change_orange {
+    background-image: url(./../images/footer/liwucheng.png);
+    margin-right: 5px;
+}
+footer .footer .container .service .service-ul li:nth-child(5) a i.change_orange {
+    background-image: url(./../images/footer/didiancheng.png);
+}
+
+/*footer 的中间列表部分*/
+footer .footer .container .list {
+    padding: 40px 0;
+}
+footer .footer .container .list .foot-links {
+    float: left;
+    width: 160px;
+    height: 112px;
+    margin: 0;
+}
+footer .footer .container .list .foot-links dt {
+    margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+footer .footer .container .list .foot-links dd {
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+footer .footer .container .list .foot-links dd a {
+    color: #757575;
+}
+/*footer 中间部分的右侧热线电话*/
+footer .footer .container .list .col-contact {
+    float: right;
+    width: 251px;
+    height: 112px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+}
+
+footer .footer .container .list .col-contact .phone {
+    margin: 0 0 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+}
+footer .footer .container .list .col-contact p {
+    margin: 0 0 16px;
+    font-size: 12px;
+}
+footer .footer .container .list .col-contact a {
+    display: inline-block;
+    background: #fff;
+    color: #ff6700;
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 28px;
+    border: 1px solid rgb(255, 103, 0);
+    transition: all .2s linear;
+}
+/*鼠标移上改变背景图片 一会再写  先写头*/
+footer .footer .container .list .col-contact a i.i-btn{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url(../images/footer/liuyan.png);
+    background-position:0 2px ;
+    transition: all .2s linear;
+}
+footer .footer .container .list .col-contact.change_kf a {
+    background: #ff6700;
+    color: #FFFFFF;
+}
+footer .footer .container .list .col-contact.change_kf a i.i-btn {
+    background-image: url(../images/footer/liuyanw.png);
+
+}
+
+    /*footer 的底部 一些信息*/
+footer .footer .di {
+    padding: 30px 0;
+    font-size: 12px;
+    background: #fafafa;
+}
+footer .footer .container .site-info .container-logo .logo-foot {
+    float: left;
+    width: 57px;
+    height: 57px;
+    margin-right: 10px;
+    background: url(../images/footer/mi-logo.png) no-repeat 50% 50%;
+    display: block;
+    text-align: left;
+    text-indent: -9999em;
+    overflow: hidden;
+    background-color: #ff6700;
+}
+/*di中间的那部分 */
+footer .footer .container .site-info .container-logo .text {
+    float: left;
+    color: #b0b0b0;
+
+}
+footer .footer .container .site-info .container-logo .text .sites {
+    margin: 0;
+    line-height: 18px;
+}
+footer .footer .container .site-info .container-logo .text .sites a {
+    color: #757575;
+}
+footer .footer .container .site-info .container-logo .text p a {
+    color: #b0b0b0;
+}
+footer .footer .container .site-info .container-logo .text p a.change_fcolor {
+    color: #ff6700;
+}
+
+/*底部最右侧的诚信网站*/
+footer .footer .di .site-info .container-logo .info-links {
+    float: right;
+    _display: inline;
+    height: 28px;
+    margin: 4px 0 0;
+}
+footer .footer .di .site-info .container-logo .info-links a {
+    color: #757575;
+    text-decoration: none;
+}
+footer .footer .di .site-info .container-logo .info-links a img {
+    width: auto;
+    height: 28px;
+    margin-left: 0;
+}
+/*小米为发烧而生*/
+footer .footer .di .slogan{
+    clear: both;
+    margin: 30px auto 0;
+    width: 267px;
+    height: 19px;
+    background: url(../images/footer/slogan2016.png) no-repeat center 0;
+    display: block;
+    text-align: left;
+    text-indent: -9999em;
+    /*利用这个隐藏文字增加语义*/
+    overflow: hidden;
+}

@@ -1,0 +1,184 @@
+body{
+    background: #f9f9f9;
+}
+.bg_box {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    display: -webkit-box;
+}
+.bg_box .layout {
+    padding-bottom: 80px;
+    margin: 0 auto;
+}
+.bg_box .layout .form_box {
+    width: 854px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.bg_box .layout .form_box .form {
+    border: none;
+    background: #fff;
+    padding: 34px 34px 25px;
+    min-height: 400px;
+
+}
+.bg_box .layout .form_box .form .logo {
+    padding-bottom: 40px;
+    display: block;
+}
+.bg_box .layout .form_box .form .logo a {
+    width: 49px;
+    height: 48px;
+    margin: 0 auto;
+    display: block;
+    cursor: default;
+    background-image: url(./../images/register/milogo.png);
+}
+.bg_box .layout .form_box .form .title_box {
+    text-align: center;
+}
+.bg_box .layout .form_box .form .title_box .title {
+    font-size: 30px;
+    font-weight: normal;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+}
+.bg_box .layout .form_box .form .form_item .form_content {
+    width: 332px;
+    padding: 30px 0;
+    line-height: 20px;
+    margin: 0 auto;
+}
+.bg_box .layout .form_box .form .form_item .form_content .hx .t_phone {
+    padding-bottom: 5px;
+    color: #333;
+    font-weight: normal;
+    font-size: 14px;
+}
+.bg_box .layout .form_box .form .form_item .form_content .list {
+    position: relative;
+}
+.bg_box .layout .form_box .form .form_item .form_content .list .inputing {
+}
+.bg_box .layout .form_box .form .form_item .form_content .list .inputing label {
+    margin-left: -1px;
+    position: relative;
+    z-index: 3;
+    height: 43px;
+    line-height: 40px;
+    display: inline-block;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 15px;
+}
+/*错误的label加边框*/
+.bg_box .layout .form_box .form .form_item .form_content .list .inputing label.err{
+    border-color: #f66;
+}
+.bg_box .layout .form_box .form .form_item .form_content .list .inputing label input {
+    width: 330px;
+    height: 39px;
+    line-height: 20px;
+    display: inline-block;
+    padding: 10px;
+    color: #333;
+    border: none;
+}
+.bg_box .layout .form_box .form .form_item .form_content>span {
+    padding-bottom:15px  ;
+    color: #f66 ;
+    display: none;
+    font-size: 14px;
+}
+.bg_box .layout .form_box .form .form_item .form_content>span.err{
+    display: inline-block;
+}
+.bg_box .layout .form_box .form .form_item .form_content>span>em {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url(./../images/register/tanhao.png);
+    margin: 5px 3px 0 0;
+    vertical-align: -2px;
+}
+/*{*/
+    /*border: 1px solid #f66 !important;*/
+/*}*/
+
+.bg_box .layout .form_box .form .form_item .form_content .btn input {
+    background-color: #ff6700;
+    border: 1px solid rgba(186,186,186,0.3);
+    color: #fff;
+    width: 330px;
+    height: 42px;
+    margin: 0 auto;
+    line-height: 42px;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.bg_box .layout .form_box .form .ys_box {
+    text-align: center;
+    padding-top: 40px;
+}
+.bg_box .layout .form_box .form .ys_box .msg {
+    color: #9d9d9d;
+}
+.bg_box .layout .form_box .form .ys_box .msg label {
+    padding: 10px 0;
+    cursor: pointer;
+    display: inline-block;
+    outline: 0 none;
+    font-size: 14px;
+}
+.bg_box .layout .form_box .form .ys_box .msg label i {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-top: -4px;
+    *margin-top: -2px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(./../images/register/duihao.png);
+}
+.bg_box .layout .form_box .form .ys_box .msg label i.err {
+    background-image: url(./../images/register/baidian.png);
+
+}
+.bg_box .layout .form_box .form .ys_box .msg label a {
+    font-weight: bold;
+}
+
+
+.footer {
+    background: #f9f9f9;
+    margin-top: 100px;
+    position: relative;
+    z-index: 4;
+    height: 80px;
+    text-align: center;
+    font-size: 13px;
+    color: #757575;
+}
+.footer .link {
+    text-align: center;
+}
+.footer .link .list li {
+    display: inline-block;
+
+}
+.footer .link .list li a {
+    display: inline-block;
+    padding: 0 10px;
+    color: #757575;
+}
+.footer .beian {
+    padding: 10px;
+}
+.footer .beian a {
+    color: #757575;
+}

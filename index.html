@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/base.css" id="base">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="./js/jQuery3.2.1.js"></script>
+    <script src="./js/vue.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/insertBefore.js"></script>
+    <script src="./js/index.js"></script>
+
+</head>
+<!--
+        主页版心是1226px；
+    -->
+<body >
+    <div>
+        <div id="header"></div>
+    </div>
+    <div id="appindex">
+    <div class="home_super warpper" >
+        <div class="home_content">
+            <div class="home_lunbo">
+                <div class="ui_warrper">
+                    <div class="ui_viewport"> <!--overfolw：hidden-->
+                        <div class="lunbotu">
+                            <!--图-->
+                            <div class="slide slide_hide"><a href="/shopping.html?4"><img :src="res.banner_pic.split(',')[0]" ></a></div>
+                            <div class="slide"><a href="/phone.html"><img :src="res.banner_pic.split(',')[1]" alt=""></a></div>
+                            <div class="slide"><a href="/phone.html"><img :src="res.banner_pic.split(',')[2]" alt=""></a></div>
+                            <div class="slide"><a href="/shopping.html?2"><img :src="res.banner_pic.split(',')[3]" alt=""></a></div>
+                            <div class="slide"><a href="/shopping.html?3"><img :src="res.banner_pic.split(',')[4]" alt=""></a></div>
+                        </div>
+                    </div>
+                    <div class="ui_control">
+                        <!--点和左右-->
+                        <div class="control_dian">
+                            <div class="ui_item"><a href="javascript:;" class="a_hover">1</a></div>
+                            <div class="ui_item"><a href="javascript:;">2</a></div>
+                            <div class="ui_item"><a href="javascript:;">3</a></div>
+                            <div class="ui_item"><a href="javascript:;">4</a></div>
+                            <div class="ui_item"><a href="javascript:;">5</a></div>
+                        </div>
+                        <div class="control_zuoyou">
+                            <a href="javascript:;" class="ui_prev" data-control="ui_prev">上一张</a>
+                            <a href="javascript:;" class="ui_next" data-control="ui_next">下一张</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home_sub clearfix">
+                <div class="span4 ">
+                    <ul class="home-channel-list clearfix">
+                        <li class="exposure top left rit bot"><a href="javascript:;"><i></i>选购手机</a></li>
+                        <li class="exposure top rit bot"><a href="javascript:;"><i></i>企业团购</a></li>
+                        <li class="exposure top bot"><a href="javascript:;"><i></i>F码通道</a></li>
+                        <li class="exposure left rit"><a href="javascript:;"><i></i>米粉卡</a></li>
+                        <li class="exposure rit"><a href="javascript:;"><i></i>以旧换新</a></li>
+                        <li class="exposure "><a href="javascript:;"><i></i>话费充值</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="span16">
+                    <ul class="home_list clearfix">
+                        <li><a href="/phone.html"><img :src="res.banner_bottom.split(',')[0]" alt=""></a></li>
+                        <li><a href="/phone.html"><img :src="res.banner_bottom.split(',')[1]" alt=""></a></li>
+                        <li><a href="/phone.html"><img :src="res.banner_bottom.split(',')[2]" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="fast">
+            <div class="fast_box">
+                <div class="box_hd">
+                    <h2 class="title">小米闪购</h2>
+                    <div class="fast_more">
+                        <div class="fast_ctrl">
+                            <a class="prev" href="javascript:;"></a>
+                            <a class="next" href="javascript:;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_bd">
+                    <!--<div class="fast_loading">-->
+                    <!--<div class="load"></div>-->
+                    <!--</div>-->
+                    <div class="fast_content">
+                        <div class="time_box">
+                            <div class="time_center">
+                                <div class="time-title">18:00 场</div>
+                                <img src="./images/index/flashpurchase.png">
+                                <div class="sub">距离开始还有</div>
+                                <div class="nock">
+                                    <div class=" box shi"></div>
+                                    <div class="maohao">:</div>
+                                    <div class=" box fen"></div>
+                                    <div class="maohao">:</div>
+                                    <div class=" box miao"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="fast_nengdong">
+                        <ul class="fast_s">
+                            <li class="fast_item"  v-for="(item,i) in res.shan_pic.split(',')">
+                                <a href="/phone.html">
+                                    <div class="bg"></div>
+                                </a>
+                                <div class="content"><a href="/phone.html" class="thumb"><img :src="item" alt=""></a>
+                                    <h3 class="title"><a href="/phone.html">{{res.shan_title.split(',')[i]}}</a></h3>
+                                    <p class="desc">{{res.shan_p.split(',')[i]}}</p>
+                                    <p class="price"><span>{{res.shan_price.split(',')[i]}}</span><span>元</span>
+                                        <del>{{res.shan_del.split(',')[i]}}元</del>
+                                    </p>
+                                    <div class="flag"> 秒杀</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="guanggao_show">
+            <a href="/phone.html"><img :src="res.max.split(',')[0]" alt=""></a>
+        </div>
+    </div>
+    <div class="home_main ">
+        <div class="main_container warpper">
+            <div class="main_phone main_sbox">
+                <div class="box_hd">
+                    <h2 class="title">手机</h2>
+                </div>
+                <div class="box_bd">
+                    <div class="row clearfix">
+                        <div class="spanfirst">
+                            <div class="item1">
+                                <a href="/phone.html"><img :src="big.sj_max" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="qitaspan">
+                            <ul class="brik_list clearfix">
+                                <li class="brik_item" v-for="(value,index) in big.sj_min.split(',')">
+                                    <div class="b_img"><a href="/phone.html" class="exo"><img :src="value" alt=""></a></div>
+                                    <h3 class="title"><a href="/phone.html">{{big.sj_title.split(',')[index]}}</a></h3>
+                                    <p class="desc">{{big.sj_p.split(',')[index]}}</p>
+                                    <p class="price"><span class="num">{{big.sj_price.split(',')[index]}}</span>元  </p>
+                                    <!--<div class="flag">新品</div>-->
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_show_pic"><a href="/phone.html" > <img width="1226" :src="res.max.split(',')[1]"></a></div>
+            <div class="main_tv main_sbox">
+                <div class="box_hd">
+                    <h2 class="title">家电</h2>
+                    <div class="more">
+                        <ul class="tab_list">
+                            <li class="active_li">热门</li>
+                            <li>电视影音</li>
+                            <li>电脑</li>
+                            <li>家居</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_bd">
+                    <div class="row">
+                        <div class="span_lf">
+                            <ul class="b_list clearfix">
+                                <li class="b_item"v-for="item in big.left_pic.split(',')"><a href="/phone.html" ><img :src="item" alt=""></a></li>
+                            </ul>
+                        </div>              <!--                  ./images/index/                  -->
+                        <div class="span_rt">
+                            <div class="span_rt_content">
+                                <ul class="b_uist clearfix" v-for="(value,index) in big.jd_pic.split('|')">
+                                    <li class="b_rist" v-for="(item,i) in value.split(',')">
+                                        <div class="picture"><a href="/phone.html" class="exo"><img :src="item" alt=""></a></div>
+                                        <h3 class="title"><a href="/phone.html">{{big.jd_title.split('|')[index].split(',')[i]}}</a></h3>
+                                        <p class="desc">{{big.jd_desc.split('|')[index].split(',')[i]}}</p>
+                                        <p class="price"><span class="num">{{big.jd_price.split('|')[index].split(',')[i]}}</span>元</p>
+                                        <p class="rank"></p>
+                                        <div class="pic">
+                                            <a href="">
+                                                <span class="review">{{big.jd_review.split('|')[index].split(',')[i]}}</span>
+                                                <span class="athor"><span class="data"> {{big.jd_athor.split('|')[index].split(',')[i]}} </span></span>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="b_rist b_rist_s">
+                                        <div class="img">
+                                            <a href="/phone.html"><img src="./images/index/pms_1521634907.16181074!220x220.jpg" alt=""></a>
+                                        </div>
+                                        <h3 class="title_s">
+                                            <a href="/phone.html">小米净水器（厨下式）</a>
+                                        </h3>
+                                        <p class="price"><span class="num">1999</span>元</p>
+                                    </li>
+                                    <li class="b_rist b_rist_s_gd">
+                                        <div class="img">
+                                            <a href="/phone.html"><img src="./images/index/gengduo.png" alt=""></a>
+                                        </div>
+                                        <a href="/phone.html">浏览更多
+                                            <small>热门</small>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="r_prudect">
+                <div class="box_hd">
+                    <h2 class="title">热评产品</h2>
+                </div>
+                <div class="box_bd">
+                    <ul class="view_list clearfix">
+                        <li class="view_item" v-for="(value,index) in res.ren_pic.split(',')">
+                            <div class="figure"><a href="/phone.html"><img :src="value" alt=""></a></div>
+                            <p class="review"><a href="/phone.html">{{res.ren_desc.split(',')[index]}}</a></p>
+                            <p class="auto"> {{res.ren_p.split(',')[index]}} </p>
+                            <div class="info">
+                                <h3 class="title"><a href="/phone.html">{{res.ren_title.split(',')[index]}}</a></h3>
+                                <span class="sep">|</span>
+                                <p class="price">{{res.ren_price.split(',')[index]}}</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="n_rong">
+                <div class="box_hd">
+                    <h2 class="title">内容</h2>
+                </div>
+                <div class="box_bd">
+                    <ul class="content_list clearfix">
+                        <li class="content_item" v-for="(value,index) in bottom.h2.split(',')">
+                            <h2 class="title">{{value}}</h2>
+                            <div class="varp">
+                                <ul class="c_lb_list">
+                                    <li v-for="(item,i) in bottom.title.split('|')[index].split(',')">
+                                        <h4 class="name"><a href="/phone.html">{{item}}</a></h4>
+                                        <p class="desc"><a href="/phone.html">{{bottom.title.split('|')[index].split(',')[i]}}</a></p>
+                                        <div class="pic"><a href="/phone.html"><img :src="bottom.pic.split('|')[index].split(',')[i]" alt=""></a></div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="cctrl">
+                                <ul class="sm_ctr">
+                                    <li class="page" v-for="(item,i) in bottom.title.split('|')[index].split(',')"><span class="dot" >{{i+1}}</span></li>
+                                </ul>
+                            </div>
+                            <div class="cczy">
+                                <a href="javascript:;" class="ccprev"><img src="./images/index/xz.png" alt=""></a>
+                                <a href="javascript:;" class="next"><img src="./images/index/xy.png" alt=""></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div></div>
+
+
+    <div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
+

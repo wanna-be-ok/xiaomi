@@ -1,0 +1,1318 @@
+/*#header .container .defined {*/
+/*visibility: hidden;*/
+/*}*/
+#header .site-header .container .nav .nav_ul .super_nav .super_possible {
+    display: none;
+}
+#header .site-header .container .nav .nav_ul .super_nav .super_possible .super_list {
+    background: #ffffff;
+    border: 1px solid #ff6700;
+}
+#header .site-header .container .nav .nav_ul .super_nav .super_possible .super_list .super_li>a {
+    color: #424242;
+}
+/*列表的背景颜色和文字颜色*/
+/*#header .site-header .container .nav .nav_ul .super_nav .super_possible {*/
+/*display: block;*/
+/*}*/
+#header .site-header .container .nav .nav_ul .super_nav .super_possible .super_list .super_li.hover_superli_color>a {
+    color: #FFFFFF;
+    background: #ff6700;
+}
+
+/*内容*/
+.p_header .p_box {
+    position: relative;
+    z-index: 4;
+    background: #fff;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    -webkit-box-shadow: 0px 5px 5px rgba(0,0,0,0.07);
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.07);
+}
+.p_header .p_box .p_nav {
+    position: relative;
+    height: 63px;
+    width: 100%;
+    margin-top: 0;
+    color: #616161;
+}
+.p_header .p_box .p_nav .p_container {
+    width: 1226px;
+    *zoom: 1;
+    margin-right: auto;
+    margin-left: auto;
+}
+.p_header .p_box .p_nav .p_container .p_title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 60px;
+    color: #212121;
+    float: left;
+}
+.p_header .p_box .p_nav .p_container .p_son {
+    color: #616161;
+}
+.p_header .p_box .p_nav .p_container .p_son .p_left {
+    float: left;
+    margin-left: 5px;
+    font-size: 12px;
+    margin-top: 21px;
+    color: #616161;
+}
+.p_header .p_box .p_nav .p_container .p_son .p_left .span {
+    margin: 0 .25em;
+    color: #212121;
+    font-size:12px;
+}
+.p_header .p_box .p_nav .p_container .p_son .p_left a {
+    font-size: 12px;
+    color: #616161;
+}
+.p_header .p_box .p_nav .p_container .p_son .p_right {
+    float: right;
+    margin: 17px 0 0 0;
+    color: #616161;
+}
+.p_header .p_box .p_nav .p_container .p_son .p_right a.cur {
+    color: #ff6700;
+}
+.p_header .p_box .p_nav .p_container .p_son .p_right .span {
+    margin: 0 .25em;
+    color: #e0e0e0;
+}
+.p_header .p_box .p_nav .p_container .p_son .p_right a {
+    color: #616161;
+}
+.p_header .p_box .p_nav .p_container .p_son .p_right a.p_btn_small {
+    display: inline-block;
+    color: #FFFFFF;
+    border: 1px solid #ff6700;
+    cursor: pointer;
+    margin-left: 5px;
+    background: #ff6700;
+    text-align: center;
+    width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    transition: all .4s;
+}
+.p_header .p_box .p_nav .p_container .p_son .p_left a:hover ,
+.p_header .p_box .p_nav .p_container .p_son .p_right a:not(:last-child):hover{
+    color: #ff6700;
+}
+/*浮动导航栏*/
+.p_header#p_fixed {
+    position: fixed;
+    top: -65px;
+    z-index: 1000;
+    width: 100%;
+    transition: all .5s;
+}
+.p_header#p_fixed.p_dow{
+    top: 0;
+}
+    /*大轮播  */
+.mi8_index .section {
+    width: 100%;
+    height: 14.12em;
+    overflow: hidden;
+    _zoom: 1;
+    text-align: center;
+    font-size: 74.3359px;
+    position: relative;
+}
+.mi8_index .section .txt_banner {
+    position: absolute;
+    top: 100px;
+    color: #000;
+    z-index: 2;
+    width: 100%;
+    padding-top: 1.3em;
+    opacity: 0;
+}
+.mi8_index .section .txt_banner.txt_banner_black  img:nth-child(1) {
+    display: none;
+}
+.mi8_index .section .txt_banner.txt_banner_white {
+    color: #fff;
+}
+.mi8_index .section .txt_banner.txt_banner_white img:nth-child(2) {
+    display: none;
+}
+.mi8_index .section .txt_banner img {
+    width: 2.36em;
+    height: .77em;
+    display: block;
+    margin: 0 auto .22em;
+    -webkit-transition-delay: .5s;
+    transition-delay: .5s;
+}
+.mi8_index .section .txt_banner h2 {
+    font-size: .23em;
+    padding-top: 0;
+    font-family: 'F5a5b8';
+}
+.mi8_index .section .txt_banner p {
+    font-size: 13px;
+    font-family: 'F09acd';
+    line-height: 1.64;
+}
+.mi8_index .section .txt_banner .price_banner .price_span {
+    font-size: .48em;
+    margin-top: .5em;
+}
+.mi8_index .section .txt_banner .price_banner .price_span sup {
+    font-size: 1em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    font-family: 'Fae796';
+}
+.mi8_index .section .txt_banner .price_banner .price_span .num {
+    font-style: normal;
+    font-size: 36px;
+    font-family: 'Fae796';
+}
+.mi8_index .section .txt_banner .price_banner .price_span .price-per {
+    font-size: 0.57em;
+    font-family: 'Avenir', Arial;
+}
+.mi8_index .section .txt_banner .price_banner del {
+    font-size: 15px;
+    font-family: 'Avenir', Arial;
+}
+.mi8_index .section .con {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+}
+.mi8_index .section .con .wper {
+    max-width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.mi8_index .section .con .wper .img_banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 1050px;
+}
+.mi8_index .section .con .wper .img_banner .img_list {
+    position: relative;
+}
+.mi8_index .section .con .wper .img_banner .img_list .slider {
+    width: 100%;
+    position: absolute;
+    z-index: 40;
+    opacity: 0;
+    display: block;
+    transition: all .8s;
+}
+/*轮播效果*/
+.mi8_index .section .con .wper .img_banner .img_list .slider_active {
+    opacity: 1;
+    z-index: 50;
+}
+
+
+.mi8_index .section .con .wper .img_banner .img_list .slider img {
+    width:100%;
+    height:  1050px;
+    margin:0 auto;
+}
+.mi8_index .section .con .wper .control_banner {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 75px;
+    width: 100%;
+    z-index: 800;
+    height: 80px;
+}
+.mi8_index .section .con .wper .control_banner .ui_item {
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+    display: inline-block;
+    line-height: 18px;
+}
+.mi8_index .section .con .wper .control_banner .ui_item a {
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    border: none;
+    background: #888888;
+    z-index: 2;
+    text-align: left;
+    text-indent: -9999px;
+    overflow: hidden;
+    _zoom: 1;
+}
+.mi8_index .section .con .wper .control_banner .ui_item a.b_a_active{
+    background: #fff;
+}
+
+/*文字列表*/
+.mi8_index .secion_specs {
+    background: #fff;
+    text-align: center;
+}
+.mi8_index .secion_specs ul {
+    margin-top: 65px;
+    margin-bottom: 65px;
+    width:90% ;
+    top: 100px;
+    opacity: 0;
+    text-align: center;
+    padding-left: 8%;
+}
+.mi8_index .secion_specs ul li {
+    list-style: none;
+    width: 23%;
+    float: left;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    border-right: 0;
+    border-bottom: 0;
+    padding: 42px 0 38px;
+}
+.mi8_index .secion_specs ul .bl {
+    border-left: none;
+}
+.mi8_index .secion_specs ul .bt {
+     border-top: none;
+ }
+.mi8_index .secion_specs ul li span {
+    color: #111111;
+    line-height: 1;
+    display: block;
+    font-size: 24px;
+}
+.mi8_index .secion_specs ul li span.title {
+    font-size: 16px;
+    margin-top: 8px;
+    letter-spacing: 1px;
+    color: #6d6d6d;
+}
+/* 文字动画 应该是 向上定位 然后透明1
+{
+    top：0；
+    opacity：1；
+}
+*/
+/*==============================================================================================================================*/
+
+
+/*另一个轮播*/
+.mi8_index .section1 {
+    width: 100%;
+    height: 14.12em;
+    overflow: hidden;
+    _zoom: 1;
+    text-align: center;
+    font-size: 74.3359px;
+    position: relative;
+}
+.mi8_index .section1 .txt_banner1 {
+    position: absolute;
+    top: 100px;
+    opacity: 0;
+    color: #000;
+    z-index: 2;
+    width: 100%;
+    padding-top: 1.3em;
+}
+.mi8_index .section1 .txt_banner1.txt_banner_black1  img:nth-child(1) {
+    display: none;
+}
+.mi8_index .section1 .txt_banner1.txt_banner_white1 {
+    color: #fff;
+}
+.mi8_index .section1 .txt_banner1.txt_banner_white1 img:nth-child(2) {
+    display: none;
+}
+.mi8_index .section1 .txt_banner1 img {
+    width: 2.36em;
+    height: .77em;
+    display: block;
+    margin: 0 auto .22em;
+    -webkit-transition-delay: .5s;
+    transition-delay: .5s;
+}
+.mi8_index .section1 .txt_banner1 h2 {
+    font-size: .23em;
+    padding-top: 0;
+    font-family: 'F5a5b8';
+}
+.mi8_index .section1 .txt_banner1 p {
+    font-size: 13px;
+    font-family: 'F09acd';
+    line-height: 1.64;
+}
+.mi8_index .section1 .txt_banner1 .price_banner .price_span {
+    font-size: .48em;
+    margin-top: .5em;
+}
+.mi8_index .section1 .txt_banner1 .price_banner .price_span sup {
+    font-size: 1em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    font-family: 'Fae796';
+}
+.mi8_index .section1 .txt_banner1 .price_banner .price_span .num {
+    font-style: normal;
+    font-size: 36px;
+    font-family: 'Fae796';
+}
+.mi8_index .section1 .txt_banner1 .price_banner .price_span .price-per {
+    font-size: 0.57em;
+    font-family: 'Avenir', Arial;
+}
+.mi8_index .section1 .txt_banner1 .price_banner del {
+    font-size: 15px;
+    font-family: 'Avenir', Arial;
+}
+.mi8_index .section1 .con1 {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+}
+.mi8_index .section1 .con1 .wper {
+    max-width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.mi8_index .section1 .con1 .wper .img_banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 1050px;
+}
+.mi8_index .section1 .con1 .wper .img_banner .img_list {
+    position: relative;
+}
+.mi8_index .section1 .con1 .wper .img_banner .img_list .slider1 {
+    width: 100%;
+    position: absolute;
+    z-index: 40;
+    opacity: 0;
+    display: block;
+    transition: all .8s;
+}
+/*轮播效果*/
+.mi8_index .section1 .con1 .wper .img_banner .img_list .slider_active1 {
+    opacity: 1;
+    z-index: 50;
+}
+
+
+.mi8_index .section1 .con1 .wper .img_banner .img_list .slider1 img {
+    width:100%;
+    height:  1050px;
+    margin:0 auto;
+}
+.mi8_index .section1 .con1 .wper .control_banner {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 75px;
+    width: 100%;
+    z-index: 800;
+    height: 80px;
+}
+.mi8_index .section1 .con1 .wper .control_banner .ui_item1 {
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+    display: inline-block;
+    line-height: 18px;
+}
+.mi8_index .section1 .con1 .wper .control_banner .ui_item1 a {
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    border: none;
+    background: #888888;
+    z-index: 2;
+    text-align: left;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+.mi8_index .section1 .con1 .wper .control_banner .ui_item1 a.b_a_active1{
+    background: #fff;
+}
+
+
+/*图片*/
+.mi8_index .section_pic {
+    background: url(./../images/product/mi8/screen.jpg) 50% 0 no-repeat;
+    background-size: cover;
+    height: 1038px;
+    position: relative;
+}
+.mi8_index .section_pic h2 {
+    color: #fff;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    text-align: center;
+    transition-delay: .5s;
+    font-size: 52px;
+    padding-top: 93px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.mi8_index .section_pic h3 {
+    color: #fff;
+    text-align: center;
+    transition-delay: .5s;
+    font-size: 16px;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+.mi8_index .section_pic ul {
+    margin-top: 74px;
+    text-align: center;
+    color: #fff;
+    transition-delay: .5s;
+
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+.mi8_index .section_pic ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 17px;
+
+}
+.mi8_index .section_pic ul li .name {
+    display: block;
+    font-size:30px;
+}
+.mi8_index .section_pic ul li .tips {
+    color: #979797;
+    font-size: 13px;
+}
+.mi8_index .section_pic .notic {
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    bottom: .4em;
+    z-index: 1;
+    font-size: .14em;
+    color: #9b9b9b;
+}
+.mi8_index .section_gps {
+    background: url(./../images/product/mi8/gps.jpg) 50% 0 no-repeat;
+    background-size: cover;
+    height: 1038px;
+    position: relative;
+}
+.mi8_index .section_gps h2 {
+    text-align: center;
+    transition-delay: .5s;
+    font-size: 52px;
+    padding-top: 93px;
+    line-height: 1.2;
+    margin-bottom: 21px;
+    position: relative;
+    opacity: 0;
+    top: 100px;
+}
+.mi8_index .section_gps p {
+    transition-delay: 1s;
+    font-size: 16px;
+    line-height: 1.64;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    top: 100px;
+}
+.mi8_index .section_camera {
+    background: url(./../images/product/mi8/camera.jpg) 50% 0 no-repeat;
+    background-size: cover;
+    height: 1038px;
+    position: relative;
+}
+.mi8_index .section_camera .tips-icon {
+    display:block;
+    width: 138px;
+    height: 58px;
+    background: url(./../images/product/mi8/camera-icon.png) 50% 50% no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 74px;
+    top: 139px;
+}
+/* 到文字了 */
+.mi8_index .section_camera h2 {
+    text-align: center;
+    transition-delay: .5s;
+    font-size: 52px;
+    padding-top: 94px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+.mi8_index .section_camera p {
+    transition-delay: 1s;
+    font-size: 16px;
+    line-height: 1.64;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+.mi8_index .section_camera .move {
+    transition-delay: 1.2s;
+    width: 1160px;
+    height: 42px;
+    display: block;
+    margin: 78px auto;
+}
+.mi8_index .section_camera .move dd {
+    width: 240px;
+    height: 42px;
+    float: left;
+    _display: inline;
+    margin: 0 0 15px 50px;
+    line-height: 36px;
+}
+.mi8_index .section_camera .move dd .icon {
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+    display: block;
+}
+.mi8_index .section_camera .move dd .icon1 {
+    background: url(./../images/product/mi8/camera-1.png) 50% 50% no-repeat;
+}
+.mi8_index .section_camera .move dd .icon2 {
+    background: url(./../images/product/mi8/camera-2.png) 50% 50% no-repeat;
+}
+.mi8_index .section_camera .move dd .icon3 {
+    background: url(./../images/product/mi8/camera-3.png) 50% 50% no-repeat;
+}
+.mi8_index .section_camera .move dd .icon4 {
+    background: url(./../images/product/mi8/camera-4.png) 50% 50% no-repeat;
+}
+.mi8_index .section_camera .move dd .icon5 {
+    background: url(./../images/product/mi8/camera-5.png) 50% 50% no-repeat;
+}
+.mi8_index .section_camera .move dd .icon6 {
+    background: url(./../images/product/mi8/camera-6.png) 50% 50% no-repeat;
+}
+.mi8_index .section_camera .move dd .icon7 {
+    background: url(./../images/product/mi8/camera-7.png) 50% 50% no-repeat;
+}
+.mi8_index .section_camera .move dd .icon8 {
+    background: url(./../images/product/mi8/camera-8.png) 50% 50% no-repeat;
+}
+
+.mi8_index .section_camera .move dd span{
+    font-size: 13px;
+    float: left;
+}
+/*{*/
+    /*color: #111111;*/
+/*}*/
+/*无缝滚动*/
+.mi8_index .section3 {
+    position: relative;
+    margin-top: 74px;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+}
+.mi8_index .section3 .ui_warper {
+    max-width: 1902px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.mi8_index .section3 .ui_warper .ui_view {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 531px;
+}
+.mi8_index .section3 .ui_warper .ui_view .list {
+    width: 815%;
+    position: relative;
+    transition-duration: 0s;
+    left: -1426px;
+    height: 531px;
+    overflow: hidden;
+}
+.mi8_index .section3 .ui_warper .ui_view .list.tran{
+    transition: all .5s;
+}
+.mi8_index .section3 .ui_warper .ui_view .list.try{
+    left: -5230px;
+}
+.mi8_index .section3 .ui_warper .ui_view .list li {
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 951px;
+    margin: 0 8px;
+    display: inline-block;
+}
+.mi8_index .section3 .ui_warper .ui_view .list li img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    transition: all .5s;
+}
+.mi8_index .section3 .ui_warper .ui_ctrl {
+    padding-top: 20px;
+}
+.mi8_index .section3 .ui_warper .ui_pager {
+    z-index: 2;
+    bottom: -40px;
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+    width: 100%;
+}
+.mi8_index .section3 .ui_warper .ui_pager .ui-pager-item {
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+}
+.mi8_index .section3 .ui_warper .ui_pager .ui-pager-item a {
+    background-color: rgb(205, 205, 205);
+    display: inline-block;
+    width: 34px;
+    height: 7px;
+    margin: 0 5px;
+    border: 2px solid #fff;
+    text-align: left;
+    text-indent: -9999px;
+    transition: all .2s;
+}
+.mi8_index .section3 .ui_warper .ui_pager .ui-pager-item a.show_a {
+    background-color: #545454 ;
+}
+.mi8_index .section3 p {
+    transition-delay: 1s;
+    font-size: 16px;
+    line-height: 1.64;
+    color: #333;
+    margin-top: 30px;
+}
+.mi8_index .section3 .ui_controls_direction a {
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    text-indent: -9999px;
+    overflow: hidden;
+    outline: 0;
+    width: 41px;
+    height: 38px;
+    margin-top: -19px;
+}
+.mi8_index .section3 .ui_controls_direction a.ui_prev {
+    left: 0;
+    background: url(./../images/product/mi8/pre.png) 50% 0 no-repeat;
+}
+.mi8_index .section3 .ui_controls_direction a.ui_next {
+    right: 0;
+    background: url(./../images/product/mi8/next.png) 50% 0 no-repeat;
+}
+
+/*渐变小轮播*/
+.mi8_index .section4 {
+    position: relative;
+}
+.mi8_index .section4 .text {
+    padding-top: 130px;
+    margin-bottom: 74px;
+    text-align: center;
+}
+.mi8_index .section4 .text h2 {
+    text-align: left;
+    vertical-align: text-top;
+    padding-top: 0;
+    font-size: 34px;
+    line-height: 1.4;
+    width: 444px;
+    margin-bottom: 0;
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+.mi8_index .section4 .text p {
+    text-align: left;
+    vertical-align: text-top;
+    transition-delay: 1s;
+    font-size: 16px;
+    line-height: 1.64;
+    width: 327px;
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+.mi8_index .section4 .section_con {
+    width: 1226px;
+    margin: 0 auto;
+}
+.mi8_index .section4 .section_con .ui_warp {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+.mi8_index .section4 .section_con .ui_warp .ui_view {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 885px;
+}
+.mi8_index .section4 .section_con .ui_warp .ui_view ul {
+    height: 920px;
+    overflow: hidden;
+}
+.mi8_index .section4 .section_con .ui_warp .ui_view ul li {
+    list-style: none;
+    position: absolute;
+    width: 1226px;
+    z-index: 0;
+    opacity: 0;
+    transition: all .8s;
+}
+.mi8_index .section4 .section_con .ui_warp .ui_view ul li .txt {
+    text-align: center;
+    margin-top: 33px;
+    margin-bottom: 60px;
+}
+.mi8_index .section4 .section_con .ui_warp .ui_view ul li .txt h3 {
+    transition-delay: .7s;
+    font-size: 28px;
+}
+.mi8_index .section4 .section_con .ui_warp .ui_view ul li .txt p {
+    margin-top: 3px;
+    transition-delay: 1s;
+    font-size: 16px;
+    line-height: 1.64;
+}
+.mi8_index .section4 .section_con .ui_warp .ui_view ul li img {
+    width: 100%;
+    height: 720px;
+    display: block;
+}
+.mi8_index .section4 .section_con .ui_warp .ui_view ul li.show_s_li{
+    opacity: 1;
+    z-index: 50;
+}
+.mi8_index .section4 .section_con .ui_warp .ui_ctrl .ui_pager {
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+}
+.mi8_index .section4 .section_con .ui_warp .ui_ctrl .ui_pager .ui-pager-item {
+    display: inline-block;
+}
+.mi8_index .section4 .section_con .ui_warp .ui_ctrl .ui_pager .ui-pager-item a {
+    display: inline-block;
+    margin:  0 5px ;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(205, 205, 205);
+    /*#545454*/
+    z-index: 2;
+    text-align: left;
+    text-indent: -9999px;
+    overflow: hidden;
+    transition: all .2s;
+}
+.mi8_index .section4 .section_con .ui_warp .ui_ctrl .ui_pager .ui-pager-item a.show_s_a{
+    background: #545454;
+}
+
+/*视频*/
+.mi8_index .video1 {
+    text-align: center;
+}
+.mi8_index .video1 .text {
+    padding-top: 130px;
+    margin-bottom: 74px;
+}
+.mi8_index .video1 .text h2 {
+    text-align: left;
+    vertical-align: text-top;
+    display: inline-block;
+    padding-top: 0;
+    font-size: 34px;
+    line-height: 1.4;
+    width: 444px;
+    margin-bottom: 0;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+.mi8_index .video1 .text p {
+    text-align: left;
+    vertical-align: text-top;
+    display: inline-block;
+    transition-delay: 1s;
+    font-size: 16px;
+    line-height: 1.64;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+.mi8_index .video1 .video_con {
+    height: 653px;
+    position: relative;
+    background: #fff;
+}
+.mi8_index .video1 .video_con .hand {
+    background: url(./../images/product/mi8/hand.png) no-repeat 50% ;
+    background-size: auto 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.mi8_index .video1 .video_con ul {
+    position: absolute;
+    z-index: 3;
+    bottom: .6em;
+    width: 100%;
+    text-align: center;
+}
+
+.mi8_index .video1 .video_con ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+.mi8_index .video1 .video_con ul li .icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.mi8_index .video1 .video_con ul li .icon1 {
+    background: url(./../images/product/mi8/video-icon1.jpg) 50% 50% no-repeat;
+}
+.mi8_index .video1 .video_con ul li .icon2 {
+    background: url(./../images/product/mi8/video-icon2.jpg) 50% 50% no-repeat;
+}
+.mi8_index .video1 .video_con ul li .icon3 {
+    background: url(./../images/product/mi8/video-icon3.jpg) 50% 50% no-repeat;
+}
+.mi8_index .video1 .video_con ul li .icon4 {
+    background: url(./../images/product/mi8/video-icon4.jpg) 50% 50% no-repeat;
+}
+.mi8_index .video1 .video_con ul li .icon5 {
+    background: url(./../images/product/mi8/video-icon5.jpg) 50% 50% no-repeat;
+}
+.mi8_index .video1 .video_con ul li .icon6 {
+    background: url(./../images/product/mi8/video-icon6.jpg) 50% 50% no-repeat;
+}
+.mi8_index .video1 .video_con ul li .icon7 {
+    background: url(./../images/product/mi8/video-icon7.jpg) 50% 50% no-repeat;
+}
+.mi8_index .video1 .video_con ul li .name {
+    margin-top: 3px;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    color: #111;
+}
+.mi8_index .video1 .video_con .video_show {
+    margin: 0 auto;
+    padding-top: 59px;
+    position: relative;
+}
+.mi8_index .video1 .video_con .video_show video,.mi8_index .video1 .video_con .video_show img {
+    width: 695px;
+    height: 336px;
+    background: #000;
+}
+
+.mi8_index .video1 .video_con .video_show video {
+    display: none;
+}
+
+.mi8_index .video1 .video_con .video_show .video_play,.mi8_index .video1 .video_con .video_show .video_pause {
+    z-index: 3;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-left: -348px;
+    width: 695px;
+    height: 336px;
+}
+.mi8_index .video1 .video_con .video_show .video_play a ,.mi8_index .video1 .video_con .video_show .video_pause a{
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -32px;
+    left: 50%;
+    margin-left: -32px;
+    width: 65px;
+    height: 65px;
+}
+.mi8_index .video1 .video_con .video_show .video_pause{
+    display: none;
+}
+.mi8_index .video1 .video_con .video_show .video_pause a{
+    background: url(./../images/product/mi8/pause.png) 50% 0 no-repeat;
+}
+.mi8_index .video1 .video_con .video_show .video_play a{
+    background: url(./../images/product/mi8/play.png) 50% 0 no-repeat;
+}
+.mi8_index .video1 .video_con .tips {
+    width: 100%;
+    text-align: center;
+    color: #9b9b9b;
+    font-size: 12px;
+    transition-delay: 1s;
+    line-height: 1.64;
+    margin-top: 30px;
+}
+.mi8_index .video1 .video_con .video_show .bg {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-left: -347px;
+    width: 695px;
+    height: 336px;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+/*三张照片*/
+.mi8_index .AI_cam {
+    text-align: center;
+}
+.mi8_index .AI_cam .text {
+    padding-top: 130px;
+    margin-bottom: 74px;
+    text-align: center;
+}
+.mi8_index .AI_cam .text h2 {
+    text-align: left;
+    vertical-align: text-top;
+    padding-top: 0;
+    font-size: 34px;
+    line-height: 1.4;
+    width: 444px;
+    margin-bottom: 0;
+    display: inline-block;
+    position: relative;
+    top:100px;
+    opacity: 0;
+}
+.mi8_index .AI_cam .text p {
+    text-align: left;
+    vertical-align: text-top;
+    transition-delay: 1s;
+    font-size: 16px;
+    line-height: 1.64;
+    width: 343px;
+    display: inline-block;
+    position: relative;
+    top:100px;
+    opacity: 0;
+}
+
+/* 到图片了*/
+.mi8_index .AI_cam ul {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 55px;
+    text-align: center;
+}
+.mi8_index .AI_cam ul li {
+    display: inline-block;
+    width: 352px;
+    margin: 0 0 33px;
+}
+.mi8_index .AI_cam ul li img {
+    width: 278px;
+    height: 569px;
+    margin: 0 auto;
+}
+.mi8_index .AI_cam ul li p {
+    transition-delay: 1s;
+    font-size: 16px;
+    line-height: 1.64;
+}
+.mi8_index .AI_cam ul li p.desc{
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+.mi8_index .zhengxing {
+    background: url(./../images/product/mi8/ai.jpg) 50% 0 no-repeat;
+    background-size: cover;
+    height: 1096px;
+    color: #fff;
+    position: relative;
+}
+.mi8_index .zhengxing h2 {
+    transition-delay: .5s;
+    font-size: 52px;
+    padding-top: 93px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+.mi8_index .zhengxing p {
+    transition-delay: 1s;
+    font-size: 16px;
+    line-height: 1.64;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+.mi8_index .zhengxing p.tips {
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    bottom: 3px;
+    z-index: 1;
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+}
+
+.mi8_index .zhengxing2 {
+    margin-bottom: 57px;
+    text-align: center;
+    margin-top: 57px;
+}
+.mi8_index .zhengxing2 .item {
+    height: 850px;
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.mi8_index .zhengxing2 .item h3 {
+    padding-top: 260px;
+    font-size: 37px;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+.mi8_index .zhengxing2 .item p {
+    font-size: 16px;
+    margin-top: 6px;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+.mi8_index .zhengxing2 .item img {
+    width: 449px;
+    height: 67px;
+    display: block;
+    margin-left: 22%;
+    margin-top: 55px;
+}
+.mi8_index .zhengxing2 .item.img{
+    background: url(./../images/product/mi8/aibeauty.jpg) 50% 0 no-repeat;
+    background-size: cover;
+}
+.mi8_index .zhengxing2 p.tips {
+    position: absolute;
+    z-index: 3;
+    bottom: 12px;
+    width: 100%;
+    text-align: center;
+    color: #9b9b9b;
+    font-size: 12px;
+    line-height: 1.64;
+    transition:all .8s 1s;
+}
+
+
+.mi8_index .cpu {
+    background: url(./../images/product/mi8/cpu.jpg) 50% 0 no-repeat;
+    background-size: cover;
+    height: 1022px;
+    color: #fff;
+    text-align: center;
+}
+.mi8_index .cpu h2 {
+    padding-top: 260px;
+    font-size: 37px;
+    position: relative;
+    top:100px;
+    opacity: 0;
+}
+.mi8_index .cpu p {
+    transition-delay: 1s;
+    font-size: 16px;
+    line-height: 1.64;
+    position: relative;
+    top:100px;
+    opacity: 0;
+}
+.mi8_index .redwai {
+    background: url(./../images/product/mi8/infrared.jpg) 50% 0 no-repeat;
+    background-size: cover;
+    height: 1022px;
+    color: #fff;
+    text-align: center;
+    color: #111;
+}
+.mi8_index .redwai h2 {
+    transition-delay: .5s;
+    font-size: 52px;
+    padding-top: 93px;
+    line-height: 1.2;
+    margin-bottom: 21px;
+    font-weight: bold;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+.mi8_index .redwai p {
+    transition-delay: 1s;
+    font-size: 26px;
+    line-height: 1.64;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+
+
+.mi8_index .pic_l {
+    margin-top: 57px;
+    text-align: center;
+}
+.mi8_index .pic_l .img {
+    background: url(./../images/product/mi8/xiaoai.jpg) 50% 0 no-repeat;
+    background-size: cover;
+    height: 550px;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.mi8_index .pic_l .txt {
+    color: #111;
+    background: #fff;
+    height: 550px;
+    width: 50%;
+    text-align: center;
+    float: right;
+}
+.mi8_index .pic_l .txt h3 {
+    font-size: 37px;
+    padding-top: 193px;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    -webkit-transition: all .5s .3s;
+    -moz-transition: all .5s .3s;
+    -ms-transition: all .5s .3s;
+    -o-transition: all .5s .3s;
+    transition: all .5s .3s;
+}
+.mi8_index .pic_l .txt p {
+    font-size: 22px;
+    margin-top: 8px;
+    transition: all .5s 1s;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+
+
+.mi8_index .pic_r {
+    margin-top: 57px;
+    text-align: center;
+}
+.mi8_index .pic_r .img {
+    background: url(./../images/product/mi8/nfc.jpg) 50% 0 no-repeat;
+    background-size: cover;
+    height: 550px;
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+.mi8_index .pic_r .txt {
+    color: #111;
+    background: #fff;
+    height: 550px;
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+.mi8_index .pic_r .txt h3 {
+    font-size: 37px;
+    padding-top: 193px;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    -webkit-transition: all .5s .3s;
+    -moz-transition: all .5s .3s;
+    -ms-transition: all .5s .3s;
+    -o-transition: all .5s .3s;
+    transition: all .5s .3s;
+}
+.mi8_index .pic_r .txt p {
+    font-size: 22px;
+    margin-top: 8px;
+    transition: all .5s 1s;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+/*研究一下动画*/
+.mi8_index .secion_specs ul.fudong_show,
+.mi8_index .section .txt_banner.fudong_show,
+.mi8_index .section1 .txt_banner1.fudong_show,
+.mi8_index .section_pic h2.webfont.fudong_show,
+.mi8_index .section_pic h3.webfont5.fudong_show,
+.mi8_index .section_pic ul.fudong_show,
+.mi8_index .section_gps h2.fudong_show,
+.mi8_index .section_gps p.fudong_show,
+.mi8_index .section_camera h2.fudong_show,
+.mi8_index .section_camera p.fudong_show,
+.mi8_index .section4 .text h2.fudong_show,
+.mi8_index .section4 .text p.fudong_show,
+.mi8_index .video1 .text h2.fudong_show,
+.mi8_index .video1 .text p.fudong_show,
+.mi8_index .AI_cam .text h2.fudong_show,
+.mi8_index .AI_cam .text p.fudong_show,
+.mi8_index .zhengxing h2.fudong_show,
+.mi8_index .zhengxing p.fudong_show,
+.mi8_index .zhengxing2 .item h3.fudong_show,
+.mi8_index .zhengxing2 .item p.fudong_show,
+.mi8_index .cpu h2.fudong_show,
+.mi8_index .cpu p.fudong_show,
+.mi8_index .redwai h2.fudong_show,
+.mi8_index .redwai p.fudong_show,
+.mi8_index .pic_l .txt h3.fudong_show,
+.mi8_index .pic_l .txt p.fudong_show,
+.mi8_index .pic_r .txt h3.fudong_show,
+.mi8_index .pic_r .txt p.fudong_show
+{
+    transition-property: all ;
+    transition-duration:.8s;
+    top: 0;
+    opacity: 1;
+}

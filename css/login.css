@@ -1,0 +1,270 @@
+body{
+    position: relative;
+}
+.big_logobox {
+    width: 1130px;
+    margin: 0 auto;
+}
+.big_logobox .h_logo {
+    width: 200px;
+    height: 98px;
+    background: url(./../images/login/mistore_logo.png) no-repeat;
+}
+.big_logobox .h_logo a {
+    display: block;
+    height: 98px;
+    text-indent: -9999em;
+}
+.big_banner{
+    position: absolute;
+    top: 98px;
+    width: 100%;
+    background:url(./../images/login/4d52c587e6415f82684a881db27e3b01.jpg) 50% no-repeat;
+
+}
+.big_banner a {
+    display: block;
+    height: 588px;
+    text-indent: -9999em;
+}
+.wrap {
+    position: relative;
+}
+.wrap .denglu_box {
+    width: 1130px;
+    margin: 0 auto;
+    padding-top: 30px;
+    position: relative;
+}
+.wrap .denglu_box .denglu {
+    width: 410px;
+    min-height: 524px;
+    margin-bottom: 0;
+    margin-right: 0;
+    font-size: 14px;
+    z-index: 4;
+    background-color: #fff;
+    position: relative;
+    float: right;
+}
+.wrap .denglu_box .denglu .tab .nav_tabs {
+    padding: 27px 0 24px;
+    text-align: center;
+    font-size: 24px;
+    color: #e0e0e0;
+}
+.wrap .denglu_box .denglu .tab .nav_tabs .navtab-link {
+    text-align: center;
+    font-size: 24px;
+}
+.wrap .denglu_box .denglu .tab .nav_tabs .navtab-link.now {
+    color: #f56600;
+}
+.wrap .denglu_box .denglu .tab .nav_tabs span.line {
+    width: 1px;
+    height: 24px;
+    margin: 0 35px 0 42px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 24px;
+    color: #e0e0e0;
+}
+
+.wrap .denglu_box .denglu .biaodan .biao .login_xin_uname form .login_box .input label {
+    margin: 0 auto;
+    margin-bottom: 14px;
+    border: 1px solid #e0e0e0;
+    outline: 0 none;
+    font-size: 14px;
+    color: #757575;
+    height: 48px;
+    width: 346px;
+    display: table;
+    text-align: center;
+}
+.wrap .denglu_box .denglu .biaodan .biao .login_xin_uname form .login_box .input label.err{
+    border: 1px solid #f56600 !important;
+}
+.wrap .denglu_box .denglu .biaodan .biao .login_xin_uname form .login_box .input label input {
+    width: 346px;
+    flex-grow: 1;
+    height: 48px;
+    line-height: 22px;
+    padding: 13px 16px 13px 14px;
+    display: block;
+    color: #757575;
+    margin: 0 auto;
+    border: none;
+}
+/*隐藏 错误信息*/
+.wrap .denglu_box .denglu .biaodan .biao .login_xin_uname form .login_box .input>div{
+    color: #f56600;
+    line-height: 20px;
+    font-size: 14px;
+    width: 348px;
+    margin: 0 auto;
+}
+.wrap .denglu_box .denglu .biaodan .biao .login_xin_uname form .login_box .input>div>span>i{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(./../images/login/tanhao.png) 50% no-repeat;
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+.wrap .denglu_box .denglu .biaodan .biao .login_xin_uname form .login_box .input .warning {
+    display: none;
+}
+.wrap .denglu_box .denglu .biaodan .biao .login_xin_uname form .btn_bg {
+    padding-top: 10px;
+    font-size: 14px;
+}
+.wrap .denglu_box .denglu .biaodan .biao .login_xin_uname form .btn_bg input {
+    background-color: #ef5b00;
+    line-height: 50px;
+    display: block;
+    margin: 0 auto ;
+    margin-bottom: 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    width: 348px;
+    height: 60px;
+}
+.wrap .denglu_box .denglu .biaodan .biao .login_xin_uname form .other {
+    margin: 0 auto ;
+    width: 348px;
+    height: 60px;
+    margin-top: -5px;
+    font-size: 14px;
+}
+.wrap .denglu_box .denglu .biaodan .biao .login_xin_uname form .other .zhuce {
+    float: right;
+}
+.wrap .denglu_box .denglu .biaodan .biao .login_xin_uname form .other .zhuce .zhuce_box a {
+    color: #999;
+    border: 0 none;
+    height: auto;
+    line-height: normal;
+    margin: 0;
+    transition: all .2s;
+}
+.wrap .denglu_box .denglu .biaodan .biao .login_xin_uname form .other .zhuce .zhuce_box a:hover{
+    color: #f56600;
+
+}
+
+.wrap .denglu_box .denglu .biaodan .biao .login_xin_uname form .other .zhuce .zhuce_box span {
+    padding-left: 3px;
+    color: #999;
+}
+.wrap .denglu_box .denglu .biaodan .biao .qwbz {
+    padding-top: 0;
+    text-align: center;
+    font-size:  14px;
+    margin: 0 auto;
+    height: 65px;
+    width: 348px;
+    position: relative;
+    top: 75px;
+}
+.wrap .denglu_box .denglu .biaodan .biao .qwbz .oth_type_tit {
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+}
+.wrap .denglu_box .denglu .biaodan .biao .qwbz .oth_type_tit .oth_type_txt {
+    color: #bbb;
+    font-size: 14px;
+    text-align: center;
+}
+.wrap .denglu_box .denglu .biaodan .biao .qwbz .oth_type_list {
+    padding-top: 3px;
+    text-align: center;
+}
+.wrap .denglu_box .denglu .biaodan .biao .qwbz .oth_type_list a {
+    margin: 0 17px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color:#00c0a5 ;
+}
+.wrap .denglu_box .denglu .biaodan .biao .qwbz .oth_type_list a i {
+    display: block;
+    margin: 4px auto 0;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+.wrap .denglu_box .denglu .biaodan .biao .qwbz .oth_type_list a:nth-child(1) i {
+    background: url(./../images/login/icons_type.png) no-repeat;
+    background-position: -19px 0;
+}
+.wrap .denglu_box .denglu .biaodan .biao .qwbz .oth_type_list a:nth-child(2) i {
+    background: url(./../images/login/icons_type.png)  no-repeat;
+    background-position: -38px 0;
+}
+.wrap .denglu_box .denglu .biaodan .biao .qwbz .oth_type_list a:nth-child(3) i {
+    background: url(./../images/login/icons_type.png) no-repeat;
+    background-position: -57px 0;
+    width: 25px;
+}
+.wrap .denglu_box .denglu .biaodan .biao .qwbz .oth_type_list a:nth-child(4) i {
+    background: url(./../images/login/icons_type.png) no-repeat;
+    background-position: -83px 0;
+    width: 24px;
+}
+.wrap .denglu_box .denglu .biaodan .biao .qwbz .oth_type_list a:nth-child(4){
+    background-color: #00d20d;
+}
+.wrap .denglu_box .denglu .biaodan .biao .qwbz .oth_type_list a:nth-child(1){
+    background-color: #0288d1;
+
+}
+.wrap .denglu_box .denglu .biaodan .biao .qwbz .oth_type_list a:nth-child(2){
+    background-color: #d32f2f;
+
+}
+.wrap .denglu_box .denglu .biaodan .biao .qwbz .oth_type_list a:nth-child(3){
+    background-color: #0ae;
+
+}
+
+
+
+.footer {
+    background: #fff;
+    margin-top: 100px;
+    position: relative;
+    z-index: 4;
+    height: 80px;
+    text-align: center;
+    font-size: 13px;
+    color: #757575;
+}
+.footer .link {
+    text-align: center;
+}
+.footer .link .list li {
+    display: inline-block;
+
+}
+.footer .link .list li a {
+    display: inline-block;
+    padding: 0 10px;
+    color: #757575;
+}
+.footer .beian {
+    padding: 10px;
+}
+.footer .beian a {
+    color: #757575;
+}

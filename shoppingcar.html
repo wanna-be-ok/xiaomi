@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/base.css" id="base">
+    <link rel="stylesheet" href="./css/shoppingcar.css">
+    <script src="./js/vue.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/jQuery3.2.1.js"></script>
+    <script src="./js/shoppingcar.js"></script>
+</head>
+<body>
+    <div class="car_header">
+        <div class="container warpper">
+            <div class="logo">
+                <a href="/">小米官网</a>
+            </div>
+            <div class="header_title">
+                <h2>我的购物车</h2>
+                <p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+            </div>
+            <div class="info">
+                <a href="/login.html">登录</a>
+                <span>|</span>
+                <a href="/register.html">注册</a>
+            </div>
+        </div>
+    </div>
+    <div class="page_min">
+        <div class="container ">
+            <div class="car_box">
+                <div class="car_list clearfix">
+                    <div class="list_h">
+                        <div class="all_checked " >
+                            <i class="" data-target="all_checked">√</i>
+                        </div>
+                    </div>
+                    <div class="img_stall"></div>
+                    <div class="name">商品名</div>
+                    <div class="dj">单价</div>
+                    <div class="sum">数量</div>
+                    <div class="xj">小计</div>
+                    <div class="action">操作</div>
+                </div>
+                <div class="list_boby" data-target="Padd">
+
+                </div>
+            </div>
+            <div class="jg"></div>
+            <div class="title">
+                <div class="lefft">
+                    <a href="javascript:;">继续购物</a>
+                    <span>共 <i class="num" data-target="num">0</i>件商品，已选择 <i class="sum" data-target="sum">0</i>件</span>
+                </div>
+                <div class="rightt">
+                     <span class="total">
+                        合计 <i class="tal" data-target="zj">0</i>元
+                        <a href="javascript:;">去结算</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

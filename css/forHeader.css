@@ -1,0 +1,21 @@
+/*#header .container .defined {*/
+/*visibility: hidden;*/
+/*}*/
+#header .site-header .container .nav .nav_ul .super_nav .super_possible {
+    display: none;
+}
+#header .site-header .container .nav .nav_ul .super_nav .super_possible .super_list {
+    background: #ffffff;
+    border: 1px solid #ff6700;
+}
+#header .site-header .container .nav .nav_ul .super_nav .super_possible .super_list .super_li>a {
+    color: #424242;
+}
+/*列表的背景颜色和文字颜色*/
+/*#header .site-header .container .nav .nav_ul .super_nav .super_possible {*/
+/*display: block;*/
+/*}*/
+#header .site-header .container .nav .nav_ul .super_nav .super_possible .super_list .super_li.hover_superli_color>a {
+    color: #FFFFFF;
+    background: #ff6700;
+}

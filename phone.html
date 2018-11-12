@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phone</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/base.css" id="base">
+    <link rel="stylesheet" href="./css/phone.css">
+    <script src="./js/jQuery3.2.1.js"></script>
+    <script src="./js/vue.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/insertBefore.js"></script>
+    <script src="./js/phone.js"></script>
+</head>
+<body>
+<!--头部-->
+    <div id="header"></div>
+<!--轮播-->
+    <div id="app">
+        <div class="page-main">
+            <div class="channel-focus">
+                <div class="ui-wrapper">
+                    <div class="ui-viewport">
+                        <div class="J_channelSlider">
+                            <div class="slide active_show">
+                                <a href="/product.html" class="exposure"><img :src="res.banner_pic.split(',')[0]" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="/product.html" class="exposure"><img :src="res.banner_pic.split(',')[1]" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui_control">
+                        <div class="ui-pager-item">
+                            <a href="javascript:;" class="ui-pager-link active" data-showa="a">1</a>
+                        </div>
+                        <div class="ui-pager-item">
+                            <a href="javascript:;" class="ui-pager-link" data-showa="a">2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_title warpper">
+                <h2>明星产品</h2>
+            </div>
+            <!--内容-->
+            <div v-for="(value,index) in res.lang_pic.split('|')">
+                <div  v-for="(item,i) in value.split(',')">
+                    <div class="ccontainer warpper">
+                        <div class="ccbox" >
+                            <div class="ccleft">
+                                <a href="/product.html" class="exposure">
+                                    <img :src="item" alt="">
+                                </a>
+                            </div>
+                            <div class="ccright">
+                                <h3 class="title"><a href="/product.html">{{res.lang_title.split('|')[index].split(',')[i]}}</a></h3>
+                                <p class="desc">{{res.lang_p.split('|')[index].split(',')[i]}}</p>
+                                <p class="price"> <strong>{{res.lang_price.split('|')[index].split(',')[i]}}</strong>元起<del>{{res.lang_del.split('|')[index].split(',')[i]}}元</del> </p>
+                                <p class="exopsure"><a href="/product.html">了解产品 ></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channel-line" :data-index="i"></div>
+                </div>
+                <div v-for="(o,p) in res.short_pic.split('|')[index].split('?')">
+                    <div class="ccontainer warpper lcontent" :data-index="p">
+                        <div class="row" :data-index="p">
+                            <div class="span10" v-for="(m,n) in o.split(',')">
+                                <div class="figure">
+                                    <a href="/product.html" class="exposure">
+                                        <img :src="m" alt="">
+                                    </a>
+                                </div>
+                                <h3 class="title">
+                                    <a href="/product.html" class="exposure">{{res.short_title.split('|')[index].split('?')[p].split(',')[n]}}</a>
+                                </h3>
+                                <p class="desc">{{res.short_p.split('|')[index].split('?')[p].split(',')[n]}}</p>
+                                <p class="price"> <strong>{{res.short_price.split('|')[index].split('?')[p].split(',')[n]}}</strong>元起 <del>{{res.short_del.split('|')[index].split('?')[p].split(',')[n]}}元</del> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channel-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--脚部-->
+    <div id="footer"></div>
+</body>
+</html>

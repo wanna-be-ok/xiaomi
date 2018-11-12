@@ -1,0 +1,119 @@
+    <!--头部、登录-->
+    <header>
+        <div class="topbar">
+            <div class="container warpper clearfix">
+                <div class="topbar-nav fl">
+                    <a href="/">小米商城</a>
+                    <span class="sep">|</span>
+                    <a href="/">MIUI</a>
+                    <span class="sep">|</span>
+                    <a href="/">IoT</a>
+                    <span class="sep">|</span>
+                    <a href="/">云服务</a>
+                    <span class="sep">|</span>
+                    <a href="/">金融</a>
+                    <span class="sep">|</span>
+                    <a href="/">有品</a>
+                    <span class="sep">|</span>
+                    <a href="/">小爱开放平台</a>
+                    <span class="sep">|</span>
+                    <a href="/">政企服务</a>
+                    <span class="sep">|</span>
+                    <a href="/">Select Region</a>
+                </div>
+                <div class="topbar-car fr">
+                    <a href="/shoppingcar.html" class="car-now"><i class="iconcar"></i>购物车 <span class="numcar">(0)</span></a>
+                </div>
+                <div class="topbar-info fr">
+                    <a href="/login.html">登录</a>
+                    <span class="sep">|</span>
+                    <a href="/register.html">注册</a>
+                    <span class="sep">|</span>
+                    <a href="javscript:;">消息通知</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--nav-->
+    <div class="site-header">
+        <div class="container warpper clearfix"  id="app1">
+            <div class="logo fl">
+                <a href="/"></a>
+            </div>
+            <div class="nav fl">
+                <ul data-tirrget="ul_item_event" class=" nav_ul clearfix">
+                    <li data-tirrget="li_event"  class="super_nav"><a class="defined" href="javascript:;" >全部商品分类</a>
+                        <div class="super_possible">
+                            <ul data-tirrget="ul_super_list" class="super_list">
+                                <li class="super_li" v-for="(value,index) in slider">
+                                    <a class="title" :href="value.url">{{value.slider_title}}<i class="iconfont"></i></a>
+
+                                    <div class="children clearfix children_0">
+                                        <ul class="children_list children_no1" v-for="(item,i) in value.slider_name.split('|')">
+                                            <li v-for="(e,o) in item.split(',')"><a :href="value.url"><img :src="value.slider_pic.split('|')[i].split(',')[o]" alt=""><span>{{e}}</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--下面是中间部分导航和弹出框-->
+                    <li data-tirrget="li_event" class="box_li" v-for="(value,index) in res">
+                        <a href="javascript:;">{{value.header_title}}</a>
+                        <div class="item_children">
+                            <div class="container">
+                                <ul class="children_list clearfix">
+
+                                    <li class="" v-for="(item,i) in value.header_pic.split(',')">
+                                        <!--当图片没有请求出来的时候显示的图片-->
+                                        <div class="figure">
+                                            <a :href="value.url"><img :src="item" alt=""></a>
+                                        </div>
+                                        <div class="title">
+                                            <a :href="value.url">{{value.header_pname.split(',')[i]}}</a>
+                                        </div>
+                                        <p class="price">{{value.header_price.split(',')[i]}}</p>
+                                        <div class="flags">
+                                            <div class="flag">新品</div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li data-tirrget="li_event" class="box_li">
+                        <a href="javascript:;">服务</a>
+                    </li>
+                    <li data-tirrget="li_event" class="box_li">
+                        <a href="javascript:;">社区</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search" data-tirrget="search">
+                <form >
+                    <input type="search" class="search-text" id="search" autocomplete="off">
+                    <input type="button" class="search-btn" value=" ">
+                    <div class="search-hot-words">
+                        <a href="javascript:;">小米8</a>
+                        <a href="javascript:;">小米MIX 2S</a>
+                    </div>
+                    <div class="key_word_list">
+                        <ul class="result_list">
+                            <li data-key="小米6X"><a href="http://127.0.0.1:3000/phone.html"><span class="keyword"></span>小米<span class="result">约有5件</span></a></li>
+                            <li data-key="小米MIX 2S"><a href="http://127.0.0.1:3000/phone.html"><span class="keyword"></span>小米MIX 2S<span class="result">约有5件</span></a></li>
+                            <li data-key="黑鲨游戏手机"><a href="http://127.0.0.1:3000/phone.html"><span class="keyword"></span>黑鲨游戏手机<span class="result">约有5件</span></a></li>
+                            <li data-key="红米Note 5"><a href="http://127.0.0.1:3000/phone.html"><span class="keyword"></span>红米Note 5<span class="result">约有5件</span></a></li>
+                            <li data-key="红米5A"><a href="http://127.0.0.1:3000/phone.html"><span class="keyword"></span>红米5A<span class="result">约有5件</span></a></li>
+                            <li data-key="小米电视4C"><a href="http://127.0.0.1:3000/shopping.html?4"><span class="keyword"></span>小米电视4C<span class="result">约有5件</span></a></li>
+                            <li data-key="电视32英寸"><a href="http://127.0.0.1:3000/shopping.html?4"><span class="keyword"></span>电视32英寸<span class="result">约有5件</span></a></li>
+                            <li data-key="笔记本pro"><a href="http://127.0.0.1:3000/shopping.html?2"><span class="keyword"></span>笔记本pro<span class="result">约有5件</span></a></li>
+                            <li data-key="空气净化器"><a href="http://127.0.0.1:3000/shopping.html?1"><span class="keyword"></span>空气净化器<span class="result">约有5件</span></a></li>
+                            <li data-key="净水器"><a href="http://127.0.0.1:3000/shopping.html?3"><span class="keyword"></span>净水器<span class="result">约有5件</span></a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
